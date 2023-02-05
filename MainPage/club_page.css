@@ -1,0 +1,180 @@
+body {
+    font-family: barlow, Arial, Helvetica, sans-serif;
+    margin: 0px;
+    background-image: linear-gradient(150deg,white,rgb(48, 48, 48));
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+}
+a:visited {
+    color: black;
+}
+.header {
+    margin: 0px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 80px;
+    font-weight: 900;
+    text-align: center;
+    text-shadow: 6px 6px 4px rgba(0, 0, 0, 0.25);
+}
+.header_bar {
+    margin: 0px;
+    background-color: black;
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header_bar_left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.back_img img {
+    height: 32px;
+    cursor: pointer;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
+}
+.back_img .tooltip {
+    position: relative;
+    background-color: rgb(61, 61, 61, 0.8);
+    border-radius: 3px;
+    bottom: -37px;
+    left: -10px;
+    z-index: 100;
+    color: white;
+    padding: 3px 6px 3px 6px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.back_img:hover .tooltip {
+    opacity: 1;
+}
+.header_bar_centre {
+    flex: 2;
+}
+.search_bar input {
+    height: 36px;
+    width: 100%;
+    font-size: 18px;
+    border-width: 2px;
+    padding-top: 2px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 0px;
+    border-radius: 19px;
+    box-shadow: inset 4px 4px 4px rgba(112, 112, 112, 0.425);
+    background-color: white;
+}
+.search_bar {
+    
+    position: relative;
+}
+.search_img {
+    width: 36px;
+    position: absolute;
+    top: 3px;
+    right: 1px;
+    cursor: pointer;
+}
+input::placeholder {
+    font-size: 15px;
+    color: rgba(94, 94, 94, 0.692);
+}
+.header_bar_right {
+    flex: 1;
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.smail {
+    margin-right: 20px;
+    margin-left: 30px;
+}
+.smail:hover {
+    text-decoration: underline;
+    color: aqua;
+    cursor: pointer;
+}
+.header2 {
+    font-size: 50px;
+    margin: 20px 0px 10px 20px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.header3 {
+    font-size: 40px;
+    margin: 20px 0px 10px 20px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+.info {
+    font-size: 20px;
+    margin-left: 60px;
+    margin-right: 50px;
+    font-weight: 700;
+}
+.blocks_box {
+    overflow: auto;
+    white-space: nowrap;
+    margin: 20px;
+}
+.club_box {
+    display: inline-block;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: box-shadow= 1s;
+
+}
+.club_box:hover {
+    box-shadow: 8px 8px 8px rgb(39, 39, 39);
+    text-shadow: 4px 4px 5px rgba(75, 75, 75, 0.6);
+}
+.club_img {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    height: 250px;
+    width: 250px;
+    margin: 0px;
+
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.club_name {
+    margin-top: 20px;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.footer {
+    height: 200px;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+    border-top: 2px;
+    border-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.updates {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: x-large;
+}
+.deadlines {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: x-large;
+}
